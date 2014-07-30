@@ -77,6 +77,9 @@ public class Base64Mojo extends AbstractMojo {
 		// Encodage
 		String encoded = new String(Base64.encodeBase64(inputValue.getBytes()));
 		
+		// Affichage
+		getLog().debug("encoded identity ==> " + encoded);
+		
 		// Positionnement dans la variable resultat
 		project.getProperties().setProperty(outputProperty, encoded);
 	}
