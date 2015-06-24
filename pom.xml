@@ -126,13 +126,13 @@
 		<maven-project.version>2.2.1</maven-project.version>
 		
 		<!-- Maven core version property -->
-		<maven-core.version>2.2.1</maven-core.version>
+		<maven-core.version>3.0.3</maven-core.version>
 		
 		<!-- Maven settings version property -->
-		<maven-settings.version>2.2.1</maven-settings.version>
+		<maven-settings.version>3.0.3</maven-settings.version>
 		
 		<!-- Maven plugin api dependency version property -->
-		<maven-plugin-api.version>2.2.1</maven-plugin-api.version>
+		<maven-plugin-api.version>3.0.3</maven-plugin-api.version>
 		
 		<!-- Maven help api dependency version property -->
 		<maven-help-plugin.version>2.2.1</maven-help-plugin.version>

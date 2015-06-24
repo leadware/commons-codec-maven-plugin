@@ -43,7 +43,7 @@ import org.apache.maven.project.MavenProject;
  * @since 30 juil. 2014 - 21:55:47
  */
 @Mojo(name="encode-base64",
-	  defaultPhase = LifecyclePhase.PROCESS_TEST_RESOURCES, 
+	  defaultPhase = LifecyclePhase.VALIDATE, 
 	  threadSafe = true, 
 	  requiresProject = true, 
 	  requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME)
@@ -78,7 +78,7 @@ public class Base64Mojo extends AbstractMojo {
 		String encoded = new String(Base64.encodeBase64(inputValue.getBytes()));
 		
 		// Affichage
-		getLog().debug("encoded identity ==> " + encoded);
+		getLog().info("encoded identity ==> " + encoded);
 		
 		// Positionnement dans la variable resultat
 		project.getProperties().setProperty(outputProperty, encoded);
